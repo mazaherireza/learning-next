@@ -1,13 +1,14 @@
 import type { StaticImageData } from "next/image";
+
 import Image from "next/image";
 
-interface HeroProps {
+type Props = {
   imgData: StaticImageData;
   imgAlt: string;
   title: string;
-}
+};
 
-export default function Hero({ imgData, imgAlt, title }: HeroProps) {
+export default function HeroComponent({ imgData, imgAlt, title }: Props) {
   return (
     <div className="relative h-screen">
       <div className="absolute -z-1 inset-0">
