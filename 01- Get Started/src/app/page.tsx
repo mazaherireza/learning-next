@@ -1,5 +1,6 @@
 import homeImg from "../../public/home.jpg";
-import Hero from "@/components/hero/hero";
+
+import Hero from "@/components/hero/hero.component";
 
 export default function HomePage() {
   return (

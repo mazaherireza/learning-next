@@ -1,12 +1,13 @@
 import scaleImg from "../../../public/scale.jpg";
-import Hero from "@/components/hero/hero";
 
-export default function ReliablilityPage() {
+import HeroComponent from "@/components/hero/hero.component";
+
+export default function Page() {
   return (
     <div>
-      <Hero
+      <HeroComponent
         imgData={scaleImg}
-        imgAlt="steel factory"
+        imgAlt="Steel Factory"
         title="Scale Your App To Infinity"
       />
     </div>
