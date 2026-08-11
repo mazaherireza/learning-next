@@ -1,3 +1,5 @@
-export default function Home() {
-  return;
+import type { ReactNode } from "react";
+
+export default function Page(): ReactNode {
+  return <div>Snippets</div>;
 }
