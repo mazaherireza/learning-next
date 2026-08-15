@@ -6,6 +6,8 @@ import { prisma } from "@/lib/prisma";
 
 import { notFound } from "next/navigation";
 
+import CodeEditorComponent from "@/components/code-editor";
+
 type Props = {
   params: Promise<{ id: string }>;
 };
@@ -28,9 +30,10 @@ export default async function Page({ params }: Props): Promise<ReactNode> {
       <div className="text-lg font-semibold">
         Editing snippet with title: {snippet.title}
       </div>
-      <pre className="p-2 bg-violet-100 rounded">
+      {/* <pre className="p-2 bg-violet-100 rounded">
         <code>{snippet.code}</code>
-      </pre>
+      </pre> */}
+      <CodeEditorComponent snippet={snippet} />
       <button className="cursor-pointer font-semibold text-sm">Save</button>
     </div>
   );
